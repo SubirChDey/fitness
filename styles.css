@@ -21,14 +21,13 @@ body {
 /* nav starts */
 .nav-container {
     width: 85%;
-    margin: 1.2rem auto;
+    margin: 3.56rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.website-title,
-.footer-title {
+.website-title {
     font-size: 2.2rem;
     font-style: italic;
     color: #E6533C;
@@ -63,7 +62,7 @@ body {
 /* header starts */
 .header-container {
     width: 85%;
-    margin: 1.2rem auto;
+    margin: 1.2rem auto 6.25rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +129,7 @@ body {
 
 .habbit-container p {
     font-size: .9rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .habbit-text-part {
@@ -167,6 +167,7 @@ body {
     color: white;
     background-color: #222222;
     padding: 2.5rem 3.3rem;
+    margin-bottom: 5.5rem;
 }
 
 .run-text-part h3 {
@@ -224,9 +225,23 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.bmi-chart h4 {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+}
+
+td {
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
 th,
 td {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: left;
+    padding: .81rem 1.12rem;
 
 }
 
@@ -234,6 +249,21 @@ table {
     border-collapse: collapse;
 
 }
+
+.bmi-calculator h4 {
+    font-size: 1.7rem;
+    margin-bottom: .9rem;
+
+}
+
+.bmi-calculator p {
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+}
+
+
+/* team section starts */
 
 .team-text-part {
     text-align: center;
@@ -245,23 +275,25 @@ table {
     margin-top: 5.5rem;
     margin-bottom: 1rem;
 }
+
 .team-text-part p {
     font-size: 1rem;
     margin-bottom: 5.5rem;
     color: rgba(255, 255, 255, 0.5);
 }
+
 .team-images {
     width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 5.5rem;
 }
 
-.team-image img {
-    width: 400px;
-    /* display: flex; */
-    border: 3px solid red;
+.team-image {
+    background-image: url("images/trainer1.png");
 
 }
 
@@ -278,16 +310,66 @@ table {
 .footer-container {
     display: grid;
     grid-template-columns: 2fr repeat(2, 1fr);
+    margin-bottom: 4.9rem;
     /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
+.footer-title {
+    font-size: 2.2rem;
+    font-style: italic;
+    color: #E6533C;
+    margin-bottom: 1.1rem;
+
+}
+
+.title-tag p {
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.5rem;
+    width: 28rem;
+
+}
+
+.footer h3 {
+    margin-bottom: 2.3rem;
+    padding-left: 2.5rem;
+}
+
+.footer ul li {
+    list-style: none;
+    padding: .6rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
 .hr-line {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.5);
     margin-top: 20px;
 }
 
 .copyright {
     align-items: center;
     text-align: center;
-    margin-top: 1.3rem;
+    margin-top: 2.2rem;    
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 2.2rem;
+}
+
+/* responsive & mediaqueries starts */
+@media screen and (max-width: 576px) {
+    .header-container {
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .habbit-img-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }
