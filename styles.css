@@ -20,7 +20,7 @@ body {
 
 /* nav starts */
 .nav-container {
-    width: 90%;
+    width: 85%;
     margin: 1.2rem auto;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ body {
 .menu-items ul {
     display: flex;
     list-style: none;
-    
+
 
 }
 
@@ -62,7 +62,7 @@ body {
 
 /* header starts */
 .header-container {
-    width: 90%;
+    width: 85%;
     margin: 1.2rem auto;
     display: flex;
     justify-content: space-between;
@@ -73,6 +73,7 @@ body {
 .header-container h1 {
     font-size: 4.8rem;
     line-height: 5.8rem;
+    margin-bottom: 1.75rem;
 
 }
 
@@ -83,7 +84,8 @@ body {
 }
 
 .header-container p {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1.75rem;
 }
 
 .primary-btn {
@@ -95,6 +97,7 @@ body {
     border-radius: 25px;
     border: none;
     margin-right: 1rem;
+
 
 }
 
@@ -111,7 +114,7 @@ body {
 
 /* Change your habbits starts */
 .habbit-container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
     align-items: center;
@@ -156,7 +159,7 @@ body {
 
 /* run section starts */
 .run-container {
-    width: 90%;
+    width: 85%;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
@@ -215,7 +218,7 @@ body {
 }
 
 .bmi-calculator-container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -232,6 +235,21 @@ table {
 
 }
 
+.team-text-part {
+    text-align: center;
+    align-items: center;
+}
+
+.team-text-part h3 {
+    font-size: 3rem;
+    margin-top: 5.5rem;
+    margin-bottom: 1rem;
+}
+.team-text-part p {
+    font-size: 1rem;
+    margin-bottom: 5.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
 .team-images {
     width: 80%;
     margin: 0 auto;
