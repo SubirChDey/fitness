@@ -398,7 +398,8 @@ table {
 }
 
 form input {
-    padding: 18px 100px 18px 20px;
+    padding: 18px 20px 18px 20px;
+    width: 100%;
     margin: 5px;
     border: none;
     border-radius: 8px;
@@ -406,12 +407,16 @@ form input {
 }
 
 form select {
-    padding: 18px 220px 18px 20px;
+    padding: 18px 20px 18px 20px;
+    width: 100%;
     margin: 5px;
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
+}
+.select-activity select {
+    width: 100%;
 
 }
 
