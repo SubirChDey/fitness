@@ -249,6 +249,59 @@ body {
     border-radius: 15px;
 
 }
+/* Reviews section starts */
+.review h3 {
+    font-size: 2.5rem;
+    text-align: center;    
+}
+ .review {
+    width: 85%;
+    margin: 0 auto;
+ }
+
+ .review-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+    padding: 30px;
+    border-radius: 15px;
+ }
+
+ .review-header {
+    text-align: center;
+    
+ }
+ .review-header p {
+    color: rgba(255, 255, 255, 0.5);
+
+ }
+
+ .review-card {
+    max-width: 250px;
+    background-color: #222222;
+    padding: 35px 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+ }
+ .review-card h4 {
+    font-size: 1.3rem;
+ }
+ .review-card p {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 22px;
+ }
+ .review img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #6cd0e6;
+ }
+ /* .review-stars {
+    color: #FCCD2A;
+ } */
+ .checked {
+    color: orange;
+
+ }
 
 /* bmi section starts */
 
@@ -508,6 +561,9 @@ form select option {
         margin-bottom: 20px;
         width: 100%;        
     }    
+    .review-container {
+        grid-template-columns: 1fr;
+    }
 
     .bmi-text-part {
         margin-left: 40px;
